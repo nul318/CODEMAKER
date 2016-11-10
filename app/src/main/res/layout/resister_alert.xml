@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/IDVIEW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"       
+        android:text="ID" />
+
+    <EditText
+        android:id="@+id/alert_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PW" />
+
+    <EditText
+        android:id="@+id/alert_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    <!--<TextView-->
+        <!--android:id="@+id/TextView02"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="22dp"-->
+        <!--android:text="내용" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/alert_contents"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:ems="10"-->
+        <!--android:inputType="text" />-->
+
+</LinearLayout>

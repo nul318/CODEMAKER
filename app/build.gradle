@@ -1,0 +1,65 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 23 //18로했었음
+    buildToolsVersion '23.0.3'
+//    buildToolsVersion "23.1.1"
+    //compileOptions.encoding = 'windows-1251'
+    packagingOptions {
+        exclude 'META-INF/NOTICE' // will not include NOTICE file
+        exclude 'META-INF/LICENSE' // will not include LICENSE file
+        exclude 'META-INF/DEPENDENCIES' // will not include LICENSE file
+    }
+    defaultConfig {
+        applicationId "com.example.codemaker"
+        minSdkVersion 23
+        targetSdkVersion 23
+        multiDexEnabled true
+
+        ndk {
+            moduleName "libsonic_jni"
+        }
+    }
+    //머티리얼~~~~~~~~~~~~~~
+    aaptOptions {
+        additionalParameters "--no-version-vectors"
+    }
+    //머티리얼~~~~~~~~~~~~~~
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    sourceSets.main {
+        jni.srcDirs = []
+    }
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'x86', 'armeabi-v7a'
+            universalApk true
+        }
+    }
+
+
+    productFlavors {
+    }
+}
+repositories {
+    mavenCentral()
+}
+dependencies {
+    //    compile 'com.android.support:appcompat-v7:23.1.0'
+    compile 'com.android.support:design:23.0.0'
+    compile 'com.facebook.android:facebook-android-sdk:[4,5)'
+    compile 'com.android.support:support-v4:23.0.0'
+    compile 'com.google.android.gms:play-services-gcm:9.8.0'
+    compile files('libs/commons-net-1.4.1.jar')
+    compile files('libs/httpclient-4.3.6.jar')
+    compile files('libs/httpcore-4.3.jar')
+    compile files('libs/httpmime-4.3.6.jar')
+    compile files('libs/jakarta-oro-2.0.1.jar')
+}

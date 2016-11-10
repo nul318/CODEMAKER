@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "C:\\Users\\nul01\\AndroidStudioProjects\\CODEMAKER\\app\\build\\intermediates\\res\\merged\\debug\\raw\\drum001.wav",
+        "source": "C:\\Users\\nul01\\AndroidStudioProjects\\CODEMAKER\\app\\src\\main\\res\\raw\\drum001.wav"
+    },
+    {
+        "merged": "C:\\Users\\nul01\\AndroidStudioProjects\\CODEMAKER\\app\\build\\intermediates\\res\\merged\\debug\\raw\\g.wav",
+        "source": "C:\\Users\\nul01\\AndroidStudioProjects\\CODEMAKER\\app\\src\\main\\res\\raw\\g.wav"
+    },
+    {
+        "merged": "C:\\Users\\nul01\\AndroidStudioProjects\\CODEMAKER\\app\\build\\intermediates\\res\\merged\\debug\\raw\\c.wav",
+        "source": "C:\\Users\\nul01\\AndroidStudioProjects\\CODEMAKER\\app\\src\\main\\res\\raw\\c.wav"
+    },
+    {
+        "merged": "C:\\Users\\nul01\\AndroidStudioProjects\\CODEMAKER\\app\\build\\intermediates\\res\\merged\\debug\\raw\\f.wav",
+        "source": "C:\\Users\\nul01\\AndroidStudioProjects\\CODEMAKER\\app\\src\\main\\res\\raw\\f.wav"
+    },
+    {
+        "merged": "C:\\Users\\nul01\\AndroidStudioProjects\\CODEMAKER\\app\\build\\intermediates\\res\\merged\\debug\\raw\\dm.wav",
+        "source": "C:\\Users\\nul01\\AndroidStudioProjects\\CODEMAKER\\app\\src\\main\\res\\raw\\dm.wav"
+    },
+    {
+        "merged": "C:\\Users\\nul01\\AndroidStudioProjects\\CODEMAKER\\app\\build\\intermediates\\res\\merged\\debug\\raw\\em.wav",
+        "source": "C:\\Users\\nul01\\AndroidStudioProjects\\CODEMAKER\\app\\src\\main\\res\\raw\\em.wav"
+    },
+    {
+        "merged": "C:\\Users\\nul01\\AndroidStudioProjects\\CODEMAKER\\app\\build\\intermediates\\res\\merged\\debug\\raw\\am.wav",
+        "source": "C:\\Users\\nul01\\AndroidStudioProjects\\CODEMAKER\\app\\src\\main\\res\\raw\\am.wav"
+    }
+]

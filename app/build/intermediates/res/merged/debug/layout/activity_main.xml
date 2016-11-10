@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:background="#f2931a"
+    tools:context="com.example.codemaker.MainActivity" >
+
+
+
+
+    <!-- android:background="@android:color/holo_green_dark" -->
+
+
+    <!-- <Button -->
+    <!-- android:id="@+id/downlod_bt" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_centerHorizontal="true" -->
+    <!-- android:layout_centerVertical="true" -->
+    <!-- android:text="Board" /> -->
+
+
+    <!-- <Button -->
+    <!-- android:id="@+id/chat_bt" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_below="@+id/downlod_bt" -->
+    <!-- android:layout_centerHorizontal="true" -->
+    <!-- android:layout_marginTop="68dp" -->
+    <!-- android:text="Chat" /> -->
+
+
+    <!-- <Button -->
+    <!-- android:id="@+id/making_bt" -->
+    <!-- style="@style/AppTheme" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_above="@+id/downlod_bt" -->
+    <!-- android:layout_centerHorizontal="true" -->
+    <!-- android:layout_marginBottom="77dp" -->
+    <!-- android:text="Making" /> -->
+
+    <RelativeLayout
+        android:id="@+id/Board"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/main_board_selector"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/making"
+        android:layout_alignStart="@+id/chat"></RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/chat"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/main_chat_selector"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/Board"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="90dp"></RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/making"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/main_make_selector"
+        android:layout_marginTop="140dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/Board"></RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/main_message_selector"
+        android:id="@+id/message"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/chat"
+        android:layout_alignStart="@+id/chat"></RelativeLayout>
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView"
+        android:background="@drawable/total_logo"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:id="@+id/logout2"
+        android:background="@drawable/logout_selector"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" /></RelativeLayout>

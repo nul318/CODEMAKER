@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2931a"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="29dp"
+        android:layout_marginLeft="10dp"
+        android:text="제목"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:textColor="@android:color/white"
+        android:id="@+id/title_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/title"
+        android:layout_toEndOf="@+id/title">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:text = "내용"
+        android:textColor="@android:color/darker_gray"
+        android:id="@+id/contents_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:gravity="top"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:background="#faddb0"
+        android:layout_below="@+id/file_bt"
+        android:layout_alignEnd="@+id/post"
+        android:layout_above="@+id/author_edit" />
+
+    <Button
+        android:id="@+id/file_bt"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/file_add"
+        android:layout_below="@+id/title_edit"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/fileurl_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/darker_gray"
+        android:text="FileName"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBottom="@+id/file_bt"
+        android:layout_alignStart="@+id/title_edit" />
+
+    <TextView
+        android:id="@+id/author_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:text="Name"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20dp"
+
+        android:layout_marginBottom="20dp"
+        android:background="#faddb0"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/title_edit"
+        android:layout_toEndOf="@+id/textView" />
+
+    <Button
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/post"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:background="@drawable/board_send_selector"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/title_edit" />
+
+    <TextView
+        android:textColor="@android:color/darker_gray"
+        android:textSize="20dp"
+        android:background="#faddb0"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="작성자  "
+
+        android:id="@+id/textView"
+        android:layout_alignTop="@+id/author_edit"
+
+        android:layout_alignStart="@+id/contents_edit" />
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView2"
+        android:background="@drawable/total_logo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
